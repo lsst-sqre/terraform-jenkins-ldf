@@ -25,7 +25,7 @@ resource "kubernetes_namespace" "jenkins" {
 }
 
 module "agent" {
-  source = "git::https://github.com/lsst-sqre/deploy-jenkins.git//tf/modules/agent"
+  source = "git::https://github.com/lsst-sqre/deploy-jenkins.git//tf/modules/agent-ldfc"
 
   name                = "agent-ldfc"
   k8s_namespace       = "${kubernetes_namespace.jenkins.metadata.0.name}"
