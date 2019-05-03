@@ -35,6 +35,6 @@ module "agent" {
   agent_pass          = "${var.jenkins_agent_pass}"
   master_url          = "${var.master_url}"
   agent_replicas      = "5"
-  agent_labels        = ["docker", "ldf"]
+  agent_labels        = ["docker", "ldfc"]
   agent_executors     = "1"
 }
