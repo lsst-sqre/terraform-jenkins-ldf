@@ -37,4 +37,8 @@ module "agent" {
   agent_replicas      = "5"
   agent_labels        = ["docker", "ldfc"]
   agent_executors     = "1"
+  env_name            = "${var.env_name}"
+  swarm_image         = "lsstsqre/jenkins-swarm-client:3.15-ldfc"
+  agent_uid           = "48435"
+  agent_gid           = "202"
 }
