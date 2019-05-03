@@ -4,9 +4,23 @@ provider "kubernetes" {
   load_config_file = true
 }
 
+locals {
+  app_name    = "jenkins"
+  app_version = "1.0.0"
+}
+
 resource "kubernetes_namespace" "jenkins" {
   metadata {
-    name = "jenkins-prod"
+    name = "${local.app_name}-${var.env_name}"
+
+    labels {
+      "app.k8s.io/name"       = "${local.app_name}"
+      "app.k8s.io/instance"   = "${var.env_name}"
+      "app.k8s.io/version"    = "${local.app_version}"
+      "app.k8s.io/component"  = "agent"
+      "app.k8s.io/part-of"    = "jenkins"
+      "app.k8s.io/managed-by" = "terraform"
+    }
   }
 }
 
