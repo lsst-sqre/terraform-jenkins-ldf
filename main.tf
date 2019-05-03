@@ -11,7 +11,6 @@ resource "kubernetes_namespace" "jenkins" {
 }
 
 module "agent" {
-  source = "./modules/agent"
   source = "git::https://github.com/lsst-sqre/deploy-jenkins.git//tf/modules/agent"
 
   name                = "ldf-commons"
