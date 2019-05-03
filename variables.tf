@@ -9,3 +9,7 @@ variable "agent_pass" {
 variable "master_url" {
   description = "URL of jenkins master to attach agents to."
 }
+
+variable "env_name" {
+  description = "Name of deployment environment."
+}

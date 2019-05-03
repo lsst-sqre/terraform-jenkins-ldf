@@ -27,6 +27,7 @@ terragrunt = {
 |------|-------------|:----:|:-----:|:-----:|
 | agent\_pass | password to access jenkins master. | string | n/a | yes |
 | agent\_user | username to access jenkins master. | string | n/a | yes |
+| env\_name | Name of deployment environment. | string | n/a | yes |
 | master\_url | URL of jenkins master to attach agents to. | string | n/a | yes |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
