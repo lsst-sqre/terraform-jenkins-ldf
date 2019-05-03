@@ -31,8 +31,8 @@ module "agent" {
   k8s_namespace       = "${kubernetes_namespace.jenkins.metadata.0.name}"
   agent_storage_class = ""
   agent_volume_size   = "1500"
-  agent_user          = "${var.jenkins_agent_user}"
-  agent_pass          = "${var.jenkins_agent_pass}"
+  agent_user          = "${var.agent_user}"
+  agent_pass          = "${var.agent_pass}"
   master_url          = "${var.master_url}"
   agent_replicas      = "5"
   agent_labels        = ["docker", "ldfc"]
