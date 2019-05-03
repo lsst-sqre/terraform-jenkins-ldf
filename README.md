@@ -1,7 +1,7 @@
-terraform jenkins-ldf "top level" deployment
+terraform jenkins-ldfc "top level" deployment
 ===
 
-[![Build Status](https://travis-ci.org/lsst-sqre/terraform-jenkins-ldf.png)](https://travis-ci.org/lsst-sqre/terraform-jenkins-ldf)
+[![Build Status](https://travis-ci.org/lsst-sqre/terraform-jenkins-ldfc.png)](https://travis-ci.org/lsst-sqre/terraform-jenkins-ldfc)
 
 Usage
 ---
@@ -15,7 +15,7 @@ may be inappropriate in a module.
 ```terraform
 terragrunt = {
   terraform {
-    source = "git::git@github.com:lsst-sqre/terraform-jenkins-ldf.git//?ref=master"
+    source = "git::git@github.com:lsst-sqre/terraform-jenkins-ldfc.git//?ref=master"
   }
 }
 ```
