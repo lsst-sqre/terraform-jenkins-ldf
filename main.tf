@@ -34,7 +34,7 @@ module "agent" {
   agent_user          = "${var.agent_user}"
   agent_pass          = "${var.agent_pass}"
   master_url          = "${var.master_url}"
-  agent_replicas      = "5"
+  agent_replicas      = "6"
   agent_labels        = ["docker", "ldfc"]
   agent_executors     = "1"
   env_name            = "${var.env_name}"
