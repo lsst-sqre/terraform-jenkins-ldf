@@ -1,7 +1,7 @@
-terraform jenkins-ldf "top level" deployment
+terraform jenkins-ldfc "top level" deployment
 ===
 
-[![Build Status](https://travis-ci.org/lsst-sqre/terraform-jenkins-ldf.png)](https://travis-ci.org/lsst-sqre/terraform-jenkins-ldf)
+[![Build Status](https://travis-ci.org/lsst-sqre/terraform-jenkins-ldfc.png)](https://travis-ci.org/lsst-sqre/terraform-jenkins-ldfc)
 
 Usage
 ---
@@ -15,7 +15,7 @@ may be inappropriate in a module.
 ```terraform
 terragrunt = {
   terraform {
-    source = "git::git@github.com:lsst-sqre/terraform-jenkins-ldf.git//?ref=master"
+    source = "git::git@github.com:lsst-sqre/terraform-jenkins-ldfc.git//?ref=master"
   }
 }
 ```
@@ -27,6 +27,7 @@ terragrunt = {
 |------|-------------|:----:|:-----:|:-----:|
 | agent\_pass | password to access jenkins master. | string | n/a | yes |
 | agent\_user | username to access jenkins master. | string | n/a | yes |
+| env\_name | Name of deployment environment. | string | n/a | yes |
 | master\_url | URL of jenkins master to attach agents to. | string | n/a | yes |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
