@@ -1,5 +1,5 @@
 provider "kubernetes" {
-  version = "~> 1.6.2"
+  version = "~> 1.8.0"
 
   load_config_file = true
 }
