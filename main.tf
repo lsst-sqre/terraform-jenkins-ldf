@@ -41,5 +41,5 @@ module "agent" {
   swarm_image         = "lsstsqre/jenkins-swarm-client:3.15-ldfc"
   agent_uid           = "48435"
   agent_gid           = "202"
-  node_blacklist      = ["lsst-kub017"]
+  node_blacklist      = ["bogus"]
 }
